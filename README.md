@@ -30,17 +30,16 @@ Tìm đường đi ngắn nhất từ ô $(0,0)$ tới ô $(N-1,N-1)$.
 
 
 
-## 4. Ví dụ minh hoạ
-### Ví dụ 1:
-
-**Input:**
-(Mô tả input)
-
-**Output:**
-(Mô tả output)
-
-**Giải thích:**
-(Mô tả cách giải)
+### Ví dụ 1: Google Maps
+**Input:**  
+Nhập vào mô phỏng đồ thị của điểm xuất phát và điểm đến dưới dạng đồ thị 2D. 
+**Output:**  
+Cho ra đường đi ngắn nhất.  
+**Giải thích:**  
+- Duyệt DFS từ điểm xuất phát đến điểm cuối.
+- Duyệt theo bốn hướng (trái,phải,lên,xuống)
+- Lưu lại khoảng cách từ điểm xuất phát đến mỗi ô.
+- Nếu điểm cuối tồn tại , dừng lại và in ra khoảng cách , in ra "IMPOSSIBLE!" nếu không tồn tại.
 
 ### Ví dụ 2
 **Input:**
