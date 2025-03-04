@@ -17,6 +17,7 @@
 - **Yêu cầu bài toán**: Cho một mê cung có độ lớn $N \times N$, một số ô có chướng ngại vật.
 Tại một ô, được phép di chuyển sang ô kề cạnh ở bốn hướng: lên, xuống, trái phải; không được phép di chuyển vào ô có chướng ngoại vật.
 Tìm đường đi ngắn nhất từ ô $(0,0)$ tới ô $(N-1,N-1)$.
+Nếu không tìm thấy đáp án, in ra "IMPOSSIBLE" (bất khả thi).
 
 
 
