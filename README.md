@@ -57,6 +57,7 @@ Sau đó, ta sử dụng DFS kết hợp việc lưu trữ các giá trị bư�
 - `kInf`: Đại diện cho một giá trị vô cùng lớn, có ý nghĩa giúp đánh dấu các ô chưa được thăm hoặc là ô không thể đến được.
 - `grid`: Là một mảng hai chiều. Đây là ma trận mà mình đang cần phải tìm đường đi ngắn nhất. Tại một vị trí $(i, j)$, ta quan niệm rằng ô đó chứa chướng ngại vật khi nó là ký tự dấu thăng (`#`); ngược lại, nó là dấu chấm (`.`).
 - Hàm `DFS()`: Hàm đệ quy thực hiện thuật toán.
+- Hàm `main()`: Thực hiện việc nhập dữ liệu (độ lớn của ma trận và ma trận), gọi hàm `DFS()` và in ra kết quả.
 
 ### Về hàm DFS
 - Chức năng chính của hàm là cập nhật khoảng cách nhỏ nhất đến mỗi ô trong ma trận nếu có thể đi qua khi bắt đầu từ vị trí (0, 0).
