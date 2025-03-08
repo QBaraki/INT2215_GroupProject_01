@@ -5,7 +5,7 @@
 |---|---|---|---|---|
 | 1 | Bùi Thanh Quang | 24022826 | Nhóm trưởng | Code và tổng hợp |
 | 2 | Nguyễn Tiến Đạt | 24022875 | Thành viên | Nội dung và nói |
-| 3 | Nguyễn Tiến Nam | 24022819 | Thành viên | Nội dung |
+| 3 | Nguyễn Tiến Nam | 24022819 | Thành viên | Nội dung và Slide |
 | 4 | Phạm Gia Bảo | 24022769 | Thành viên | Nội dung và Slide |
 | 5 | Võ Hồng Duy | 24022781 | Thành viên | Nội dung và Slide |
 
