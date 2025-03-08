@@ -47,26 +47,26 @@ DFS đi theo một hướng cho đến khi không thể đi tiếp, rồi quay l
 
 #### Cách thực thi
 
-Đầu tiên, ta có thể mô hình hóa bài toàn bằng cách cho rằng ma trận ban đầu là một đồ thị đơn không có trọng số.
+Đầu tiên, ta có thể mô hình hóa bài toán bằng cách cho rằng ma trận ban đầu là một đơn đồ thị không có trọng số.
 Sau đó, ta sử dụng DFS kết hợp việc lưu trữ các giá trị bước đi đã tính trước đó để tìm ra đường đi ngắn nhất từ điểm bắt đầu $(0, 0)$ đến điểm đích $(n-1, n-1)$.
 
 ## 4. Phân tích mã nguồn
 
 ### Về mã nguồn
-- `dist[x][y]`: Mảng 2 chiều, được dùng để lưu trữ số bước ít nhất đi được từ ô ban đầu đến ô hiện tại $(x, y)$.
 - `kInf`: Đại diện cho một giá trị vô cùng lớn, có ý nghĩa giúp đánh dấu các ô chưa được thăm hoặc là ô không thể đến được.
 - `grid`: Là một mảng hai chiều. Đây là ma trận mà mình đang cần phải tìm đường đi ngắn nhất. Tại một vị trí $(i, j)$, ta quan niệm rằng ô đó chứa chướng ngại vật khi nó là ký tự dấu thăng (`#`); ngược lại, nó là dấu chấm (`.`).
+- `dist[x][y]`: Mảng hai chiều, được dùng để lưu trữ số bước ít nhất đi được từ ô ban đầu đến ô hiện tại $(x, y)$.
 - Hàm `DFS()`: Hàm đệ quy thực hiện thuật toán.
-- Hàm `main()`: Thực hiện việc nhập dữ liệu (độ lớn của ma trận và ma trận), gọi hàm `DFS()` và in ra kết quả.
+- Hàm `main()`: Thực hiện việc nhập dữ liệu (kích thước của ma trận và ma trận), gọi hàm `DFS()` và in ra kết quả.
 
 ### Về hàm DFS
-- Chức năng chính của hàm là cập nhật khoảng cách nhỏ nhất đến mỗi ô trong ma trận nếu có thể đi qua khi bắt đầu từ vị trí (0, 0).
+- Chức năng chính của hàm là cập nhật khoảng cách nhỏ nhất đến mỗi ô trong ma trận nếu có thể đi qua khi bắt đầu từ vị trí $(0, 0)$.
 - Các giá trị tham số:
   - `grid`: Ma trận ban đầu.
-  - `n`: Độ lớn của ma trận
-  - `dist`: Mảng hai chiều đã nói trước đó.
+  - `n`: kích thước của ma trận
+  - `dist`: Mảng khoảng cách đã nói trước đó.
   - `x`, `y`: Giá trị hiện tại đang xét theo hàng và cột.
-  - `current`: Số bước hiện tại đang xét.
+  - `current`: Số bước hiện tại đang xét tính từ vị trí $(0, 0)$ đến $(x, y)$.
   - Điều kiện để dừng lần đệ quy hiện tại: Khi đi ra ngoài ma trận, gặp ô chướng ngại vật, số bước hiện tại không tối ưu hoặc đã đến đích.
 - Tại vị trí $(x, y)$, nếu khoảng cách hiện tại nhỏ hơn giá trị đã lưu `dist[x][y]`, ta cập nhật giá trị đó bằng giá trị current.
 - Sau đó, ta duyệt các ô xung quanh bằng cách gọi đệ quy lần lượt đến các ô đó.
@@ -137,7 +137,7 @@ Ma trận không có đường đi.
 
 Ta đã sử dụng DFS để giải quyết bài toán tìm đường đi ngắn nhất trong một ma trận có chướng ngại vật.
 
-Với một ma trận đủ nhỏ, thuật toán DFS có thể được áp dụng; nhưng với một ma trận có quá nhiều đường đi cần phải xét, thì thuật toán sẽ mất nhiều thời gian để có thể đưa ra đáp án tối ưu.
+Với một ma trận đủ nhỏ, thuật toán DFS có thể được áp dụng; nhưng với một ma trận có quá nhiều đường đi cần phải xét, thì thuật toán sẽ mất nhiều thời gian thực thi để có thể đưa ra đáp án tối ưu.
 
 ## 7. Link video báo cáo
 [Video báo cáo nhóm 3](#)
