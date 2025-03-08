@@ -65,7 +65,7 @@ Sau đó, ta sử dụng DFS kết hợp việc lưu trữ các giá trị bư�
   - `grid`: Ma trận ban đầu.
   - `n`: kích thước của ma trận
   - `dist`: Mảng khoảng cách đã nói trước đó.
-  - `x`, `y`: Giá trị hiện tại đang xét theo hàng và cột.
+  - `x`, `y`: Tọa độ hiện tại đang xét theo hàng và cột.
   - `current`: Số bước hiện tại đang xét tính từ vị trí $(0, 0)$ đến $(x, y)$.
   - Điều kiện để dừng lần đệ quy hiện tại: Khi đi ra ngoài ma trận, gặp ô chướng ngại vật, số bước hiện tại không tối ưu hoặc đã đến đích.
 - Tại vị trí $(x, y)$, nếu khoảng cách hiện tại nhỏ hơn giá trị đã lưu `dist[x][y]`, ta cập nhật giá trị đó bằng giá trị current.
