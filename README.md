@@ -140,9 +140,8 @@ Ta đã sử dụng DFS để giải quyết bài toán tìm đường đi ngắ
 Với một ma trận đủ nhỏ, thuật toán DFS có thể được áp dụng; nhưng với một ma trận có quá nhiều đường đi cần phải xét, thì thuật toán sẽ mất nhiều thời gian thực thi để có thể đưa ra đáp án tối ưu.
 
 ## 7. Link video báo cáo
-[Video báo cáo nhóm 3](#)
 
-
+[Video báo cáo nhóm 3](https://www.youtube.com/watch?v=QXtANtu0WiA)
 
 ## 8. Link source code
 [Thư mục src](./src)
